@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar";
-import CreateUser from "./components/CreateUser/CreateUser";
-import EventList from "./components/EventList/EventList";
-import CreateEvent from "./components/CreateEvent/CreateEvent";
-import LoginUser from "./components/LoginUser/LoginUser";
-import Home from "./components/Home/Home";
-import CreateOrganization from "./components/CreateOrganization/CreateOrganization";
-=======
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import CreateEvent from "./components/CreateEvent/CreateEvent";
 import CreateUser from "./components/CreateUser/CreateUser";
@@ -17,7 +6,7 @@ import Home from './components/Home/Home';
 import LandingPage from './components/landingPage/landingPage';
 import LoginUser from "./components/LoginUser/LoginUser";
 import Navbar from "./components/Navbar/Navbar";
->>>>>>> c6581a7c330bd5ba8300b1fb0b8b014dce1249d7
+import CreateOrganization from './components/CreateOrganization/CreateOrganization';
 
 function App() {
   return (
