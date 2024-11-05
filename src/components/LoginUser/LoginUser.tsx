@@ -40,7 +40,7 @@ const LoginUser = () => {
             if (response.ok) {
                 const data = await response.json();
                 localStorage.setItem('token', data.token);
-                navigate('/events')
+                navigate('/landingPage')
             } else {
                 const errorData = await response.json();
                 setError(errorData.message || 'Login failed. Please check your credentials.');
