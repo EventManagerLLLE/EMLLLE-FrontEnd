@@ -1,12 +1,12 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import CreateEvent from "./components/CreateEvent/CreateEvent";
-import CreateOrganization from "./components/CreateOrganization/CreateOrganization";
 import CreateUser from "./components/CreateUser/CreateUser";
 import EventList from "./components/EventList/EventList";
 import Home from "./components/Home/Home";
 import LoginUser from "./components/LoginUser/LoginUser";
 import Navbar from "./components/Navbar/Navbar";
-import LandingPage from "./components/landingPage/landingPage";
+import CreateOrganization from './components/CreateOrganization/CreateOrganization';
+import LandingPage from './components/landingPage/landingPage';
 
 function App() {
   return (
