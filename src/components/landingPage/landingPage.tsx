@@ -82,16 +82,24 @@ const LandingPage: React.FC = () => {
 
   return (
     <>
-      <h1>Välkommen, {userInfo?.firstName} {userInfo?.lastName}!</h1>
-      <p>Username: {userInfo?.username}</p>
-      <p>User ID: {userInfo?.id}</p>
+   <div className='bg-gray-100 p-8'>
+  <h1 className="flex justify-center items-center bg-gray-100 my-4">
+    Välkommen, {userInfo?.firstName} {userInfo?.lastName}!
+  </h1>
+  <p className="flex justify-center items-center bg-gray-100 my-2">
+    Username: {userInfo?.username}
+  </p>
+  <p className="flex justify-center items-center bg-gray-100 my-2">
+    User ID: {userInfo?.id}
+  </p>
+</div>
 
       {organizationData && (
         <div>
-          <h2>Organization Data</h2>
-          <p>Name: {organizationData?.name}</p>
-          <p>ID: {organizationData?.id}</p>
-          <p>User ID: {organizationData?.userId}</p>
+          <h2 className="flex justify-center items-center  bg-gray-100">Organization Data</h2>
+          <p className="flex justify-center items-center  bg-gray-100">Name: {organizationData?.name}</p>
+          <p className="flex justify-center items-center  bg-gray-100">ID: {organizationData?.id}</p>
+          <p className="flex justify-center items-center  bg-gray-100">User ID: {organizationData?.userId}</p>
         </div>
       )}
     </>
