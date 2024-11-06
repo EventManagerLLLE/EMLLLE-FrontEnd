@@ -82,7 +82,7 @@ const LandingPage: React.FC = () => {
 
   return (
     <>
-   <div className='bg-gray-100 p-8'>
+   <div className='bg-gray-100 p-8 block text-gray-700 text-sm font-bold mb-2'>
   <h1 className="flex justify-center items-center bg-gray-100 my-4">
     Välkommen, {userInfo?.firstName} {userInfo?.lastName}!
   </h1>
