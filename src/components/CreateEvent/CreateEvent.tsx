@@ -9,6 +9,7 @@ const CreateEvent = () => {
   const [reqRegister, setReqRegister] = useState(false);
   const [reqConfirm, setReqConfirm] = useState(false);
   const [reqPayment, setReqPayment] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const handlePublicityChange = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
@@ -22,10 +23,6 @@ const CreateEvent = () => {
   };
   const getToken = () => localStorage.getItem("token");
   const handleSubmit = async () => {
-    console.log(isPublic);
-    console.log(reqRegister);
-    console.log(reqConfirm);
-    console.log(reqPayment);
     const token = getToken();
     try {
       const response = await axios.post(
@@ -47,9 +44,9 @@ const CreateEvent = () => {
         },
         { headers: { Authorization: `Bearer ${token}` } }
       );
-      console.log(response);
     } catch (e) {
       console.error(e);
+      setErrorMsg("Invalid input, please fill out all fields.");
     }
   };
   return (
@@ -173,6 +170,7 @@ const CreateEvent = () => {
               </label>
             </div>
           </div>
+          {errorMsg ? <p className="text-red-500">{errorMsg}</p> : <></>}
           <div className="flex items-center justify-between">
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
