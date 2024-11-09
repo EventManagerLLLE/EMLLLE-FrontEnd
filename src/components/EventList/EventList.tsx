@@ -79,7 +79,7 @@ const EventList: React.FC = () => {
                 </div>
               ))
             ) : (
-              <p>Inga deltagare Ã¤n.</p>
+              <p>Inga deltagare än.</p>
             )}
           </div>
         </div>

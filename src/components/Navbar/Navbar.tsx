@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -7,7 +6,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">EMLLLE Events</div>
         <div className="space-x-4">
-          <Link to="/" className="text-gray-300 hover:text-white">
+          <Link to="/events" className="text-gray-300 hover:text-white">
             Hem
           </Link>
           <Link to="/create-event" className="text-gray-300 hover:text-white">
