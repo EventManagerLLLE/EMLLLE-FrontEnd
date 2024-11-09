@@ -1,10 +1,11 @@
-import React from 'react'
-import LoginUser from '../LoginUser/LoginUser'
+import EventList from "../EventList/EventList"
 
 const Home = () => {
   return (
     <div>
-        <h1>Hem EMLLLE</h1>      
+        <h1>Välkommen till EMLLLE</h1>
+
+        <EventList/>   
     </div>
   )
 }
